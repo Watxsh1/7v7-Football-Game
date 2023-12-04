@@ -1,46 +1,62 @@
-# 7v7-Football-Game
-This is a 7v7 football game [with commentary] developed using gfootball engine
+# FOO7BALL
 
---educational games--
-today everything can be learned online from videos, but we dont follow everything we watch online.
-beacuse we dont interract with them, but with games we interract.
+FOO7BALL is a 7vs7 player vs AI  football game [with commentary] developed using gfootball engine
+## Step-1 [[INSTALLATION]](https://github.com/google-research/football)
 
-why football?
-while trade,cooking and language teaching is considered as education games why not football?
-average salary of a footballer is 3-5 million a year.
+install [gfootball](https://github.com/google-research/football)
 
-why 7v7?
-11v11 is the highest format of football. in order to be selected for 11v11 football you have to pass 7v7 football
-there are lots of 11v11 football but there is no 7v7 football game.
+```bash
+pip install gfootball
+```
 
-step 1:
-install gfootball from https://github.com/google-research/football
+## Step-2 [[UNSERSTANDING]](https://github.com/Watxsh1/7v7-Football-Game/blob/main/trypanrenmadam.py)
+Understanding the code:
 
-step 2:
-understanding the code:
-trypanrenmadam.py
-![image](https://github.com/Watxsh1/7v7-Football-Game/assets/101169160/bde79be9-485d-4341-9669-02fd91a99e4c)
+### Support
+goal kicks
 
+side kicks
 
-step 3:
-creating a 7v7 environment
-7v7.py
+corner kick
 
-step 4:
-try running the 7v7 environment
-foo7ball.py
+both yellow and red cards
 
-step 5:
-train the model with proximal policy optimization
-ppotraining7v7.py
-![WhatsApp Image 2023-11-20 at 15 58 58_02d51669](https://github.com/Watxsh1/7v7-Football-Game/assets/101169160/d1ae60b5-167e-4e9d-853c-8d66a2c17a84)
+offsides
 
+handballs
 
-step 6:
-change config.py and core.py as per our requirements
+penalty
 
-step 7:
-generating commentary using chat gpt for each scenario
+Each of these actions return a unique value.[which is later used in commentary]
 
-step 8:
-linking linking all the above codes and making a runnable game in play_game.py
+The length of the game is measured in terms of the
+number of frames, and the default duration of a full game
+is 3000 (10 frames per second for 5 minutes)
+
+### Mini Map
+The Mini Map is represented by four 72 × 96 matrices encoding information about the home
+team, the away team, the ball, and the active player respectively.
+
+### Pixels
+The representation consists of a 1280 × 720 RGB
+image corresponding to the rendered screen. This includes
+both the scoreboard and a small map in the bottom middle
+part of the frame from which the position of all players can
+be inferred in principle.
+
+### The floats 
+This representation provides a compact encoding and consists of a 115-dimensional vector summarizing many aspects of the game, such as players coordinates,
+ball possession and direction, active player, or game mode.
+
+### Actions:
+19 actions each assigned to a Number
+
+## Step-3 [[CREATING ENVIRONMENT]](https://github.com/Watxsh1/7v7-Football-Game/blob/main/7v7.py)
+We have to make 2 teams - team right & team left
+
+each team must have one goal keeper and 6 players
+
+## Step-4 [[TRAIN PPO MODEL]](https://github.com/Watxsh1/7v7-Football-Game/blob/main/ppotraining7v7.py)
+
+Multiple Agent Re-enforcement learning using Actor - Critic Model.
+
