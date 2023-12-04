@@ -51,6 +51,7 @@ ball possession and direction, active player, or game mode.
 ### Actions:
 19 actions each assigned to a Number
 
+
 ![image](https://github.com/Watxsh1/7v7-Football-Game/assets/101169160/ad048831-6dfc-4ae0-af47-aeb31051a69c)
 
 
