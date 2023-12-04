@@ -60,6 +60,8 @@ each team must have one goal keeper and 6 players
 ## Step-4 [[TRAIN PPO MODEL]](https://github.com/Watxsh1/7v7-Football-Game/blob/main/ppotraining7v7.py)
 
 Multiple Agent Re-enforcement learning using Actor - Critic Model.
+![image](https://github.com/Watxsh1/7v7-Football-Game/assets/101169160/89d8637a-633b-45bb-9605-82efab89ea39)
+
 
 ## Step-5[[TEST MODEL]](https://github.com/Watxsh1/7v7-Football-Game/blob/main/foo7ball.py)
 
