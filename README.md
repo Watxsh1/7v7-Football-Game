@@ -65,6 +65,8 @@ each team must have one goal keeper and 6 players
 Multiple Agent Re-enforcement learning using Actor - Critic Model.
 ![image](https://github.com/Watxsh1/7v7-Football-Game/assets/101169160/89d8637a-633b-45bb-9605-82efab89ea39)
 
+referred from [springer](https://link.springer.com/article/10.1007/s10458-023-09603-y)
+
 
 ## Step-5[[TEST MODEL]](https://github.com/Watxsh1/7v7-Football-Game/blob/main/foo7ball.py)
 
